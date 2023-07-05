@@ -3,14 +3,14 @@
 командная разработка мобильного приложения-справочника для помощи пользователям в подборе артефактов в игре Genshin Impact <br><br>
 логотип и загрузочный экран 
 <br>
-<img width="96" alt="image" src="https://github.com/flewreed/GenshinArtifacts/assets/85585724/2441d5dc-3086-4e8c-8c86-bc7da00c54f2">
+<img width="156" alt="image" src="https://github.com/flewreed/GenshinArtifacts/assets/85585724/2441d5dc-3086-4e8c-8c86-bc7da00c54f2">
 <img width="156" alt="image" src="https://github.com/flewreed/GenshinArtifacts/assets/85585724/cf33557b-bc6f-4aaf-b76f-72e20d6ffeb5">
-<img width="156" alt="image" src="https://github.com/flewreed/GenshinArtifacts/assets/85585724/5bf61104-4634-475b-8920-f1b3ee8631b1">
 <br><br>
+<img width="156" alt="image" src="https://github.com/flewreed/GenshinArtifacts/assets/85585724/5bf61104-4634-475b-8920-f1b3ee8631b1">
 <img width="156" alt="image" src="https://github.com/flewreed/GenshinArtifacts/assets/85585724/35488466-2801-438d-a574-13849811e75c">
+<br><br>персонажи<br>
 <img width="156" alt="image" src="https://github.com/flewreed/GenshinArtifacts/assets/85585724/a9584a6d-6abb-4b03-8505-44a32093853d">
 <img width="156" alt="image" src="https://github.com/flewreed/GenshinArtifacts/assets/85585724/5386088f-37a5-4734-870c-f6ab90cf38ba">
-<br><br>карточка персонажа<br>
 <img width="156" alt="image" src="https://github.com/flewreed/GenshinArtifacts/assets/85585724/0bb7e08e-7185-41a0-83f5-5b645e840f62">
 <img width="156" alt="image" src="https://github.com/flewreed/GenshinArtifacts/assets/85585724/7f6fadcb-2536-425b-948c-a0ffcca6bb93">
 <br><br>артефакты<br>
