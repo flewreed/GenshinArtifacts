@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="ButtonStyle" parent="@android:style/Widget.Button">
+		<item name="android:textColor">?attr/colorOnPrimary</item>
+		<item name="android:textSize">16sp</item>
+		<item name="android:padding">6dp</item>
+		<item name="android:textStyle">normal</item>
+		<item name="android:background">?attr/colorPrimary</item>
+		<item name="android:textAllCaps">false</item>
+		<item name="android:gravity">center</item>
+<!--		<item name="android:elevation">10dp</item>-->
+<!--		<item name="android:translationZ">8dp</item>-->
+	</style>
+
+	<style name="TextInputLayout" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+		<item name="android:textColorHint">@color/text_edit</item>
+		<item name="boxBackgroundColor">@color/white</item>
+<!--		<item name="colorAccent">@color/gray_1</item>-->
+		<item name="boxCornerRadiusBottomEnd">3dp</item>
+		<item name="boxCornerRadiusBottomStart">3dp</item>
+		<item name="boxCornerRadiusTopEnd">3dp</item>
+		<item name="boxCornerRadiusTopStart">3dp</item>
+
+
+		<item name="boxStrokeColor">@color/transparent</item>
+		<item name="boxStrokeErrorColor">@color/gray_1</item>
+		<item name="boxStrokeWidth">0dp</item>
+		<item name="boxStrokeWidthFocused">0dp</item>
+
+		<item name="endIconTint">@color/gray_1</item>
+		<item name="errorIconTint">@color/gray_1</item>
+		<item name="errorTextColor">@color/gray_1</item>
+	</style>
+
+
+
+<!--	Картинки: артефакты и персонажи	-->
+	<style name="ImageCardView" parent="CardView">
+		<item name="android:layout_marginVertical">24dp</item>
+<!--		<item name="android:layout_marginLeft">31dp</item>-->
+
+		<item name="android:background">@color/transparent</item>
+		<item name="cardCornerRadius">10dp</item>
+
+		<item name="cardElevation">2dp</item>
+		<item name="android:translationZ">4dp</item>
+	</style>
+	<style name="ImageCardViewNoMargin" parent="CardView">
+		<!--		<item name="android:layout_marginLeft">31dp</item>-->
+
+		<item name="android:background">@color/transparent</item>
+		<item name="cardCornerRadius">10dp</item>
+
+		<item name="cardElevation">2dp</item>
+		<item name="android:translationZ">4dp</item>
+	</style>
+
+	<style name="ImageMain">
+		<item name="android:scaleType">centerCrop</item>
+		<item name="android:translationZ">10dp</item>
+		<item name="android:background">@drawable/shape_img_container</item>
+		<item name="android:height">120dp</item>
+		<item name="android:width">120dp</item>
+	</style>
+
+	<style name="ImageMainShadow">
+		<item name="android:scaleType">centerCrop</item>
+		<item name="tint">@color/image_shadow</item>
+<!--		2-->
+		<item name="android:translationX">0dp</item>
+		<item name="android:scaleX">1.04</item>
+		<item name="android:translationY">3dp</item>
+		<item name="android:height">120dp</item>
+		<item name="android:width">120dp</item>
+	</style>
+
+
+
+
+
+
+
+	<style name="TabLayout" parent="Widget.MaterialComponents.TabLayout">
+		<item name="android:background">@drawable/shape_tab</item></style>
+	<style name="ThemeOverlay" parent="ThemeOverlay.MaterialComponents">
+		<item name="colorSecondary">@color/transparent</item>
+	</style>
+</resources>

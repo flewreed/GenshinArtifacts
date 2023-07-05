@@ -1,0 +1,21 @@
+<resources>
+	<string name="app_name">Genshin Artifacts</string>
+
+	<!--	Авторизация		-->
+	<string name="uid">UID</string>
+	<string name="password">Пароль</string>
+	<string name="login">Войти</string>
+
+	<!--	Главная страница	-->
+	<string name="characters">Персонажи</string>
+	<string name="artifacts">Артефакты</string>
+	<string name="title_activity_main2">MainActivity2</string>
+	<string name="tab_text_1">Tab 1</string>
+	<string name="tab_text_2">Tab 2</string>
+
+	<string name="stars_4">⭐⭐⭐⭐</string>
+	<string name="stars_5">⭐⭐⭐⭐⭐</string>
+
+	<string name="bonus_2">2 предмета:</string>
+	<string name="bonus_4">4 предмета:</string>
+</resources>

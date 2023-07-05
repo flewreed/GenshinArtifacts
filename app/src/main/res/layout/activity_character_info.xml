@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".charactersInfoPage.CharacterInfoActivity">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		android:scrollbars="none">
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingBottom="20dp">
+
+			<ImageView
+				android:id="@+id/character_full_image"
+				android:layout_width="match_parent"
+				android:layout_height="360dp"
+				android:scaleType="fitCenter"
+				android:src="@drawable/ex_xiao"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<TextView
+				android:id="@+id/char_name"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="30dp"
+				android:layout_marginTop="12dp"
+				android:layout_marginEnd="30dp"
+				android:text="Сяо"
+				android:textAlignment="center"
+				android:textColor="@color/text_main"
+				android:textSize="30sp"
+				android:textStyle="bold"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/character_full_image" />
+
+			<TextView
+				android:id="@+id/textView6"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="40dp"
+				android:layout_marginTop="14dp"
+				android:text="Стихия:"
+				android:textColor="@color/text_main"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/char_name" />
+
+			<TextView
+				android:id="@+id/textView7"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="40dp"
+				android:layout_marginTop="10dp"
+				android:text="Оружие:"
+				android:textColor="@color/text_main"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+			<TextView
+				android:id="@+id/textView20"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="40dp"
+				android:layout_marginTop="10dp"
+				android:text="Редкость:"
+				android:textColor="@color/text_main"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+			<TextView
+				android:id="@+id/textView21"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="40dp"
+				android:layout_marginTop="10dp"
+				android:text="Регион:"
+				android:textColor="@color/text_main"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+			<ImageView
+				android:id="@+id/element_image"
+				android:layout_width="25dp"
+				android:layout_height="25dp"
+				android:layout_marginStart="54dp"
+				android:layout_marginTop="13dp"
+				android:src="@drawable/ex_element"
+				app:layout_constraintStart_toEndOf="@+id/textView20"
+				app:layout_constraintTop_toBottomOf="@+id/char_name" />
+
+			<TextView
+				android:id="@+id/element_name"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="6dp"
+				android:layout_marginTop="14dp"
+				android:text="Анемо"
+				android:textColor="@color/text_main"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toEndOf="@+id/element_image"
+				app:layout_constraintTop_toBottomOf="@+id/char_name" />
+
+			<TextView
+				android:id="@+id/weapon"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="54dp"
+				android:layout_marginTop="10dp"
+				android:text="Копье"
+				android:textColor="@color/text_main"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toEndOf="@+id/textView20"
+				app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+			<TextView
+				android:id="@+id/region"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="54dp"
+				android:layout_marginTop="10dp"
+				android:text="Ли Юэ"
+				android:textColor="@color/text_main"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toEndOf="@+id/textView20"
+				app:layout_constraintTop_toBottomOf="@+id/rarity" />
+
+			<TextView
+				android:id="@+id/rarity"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="54dp"
+				android:layout_marginTop="10dp"
+				android:text="@string/stars_5"
+				android:textColor="@color/text_main"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toEndOf="@+id/textView20"
+				app:layout_constraintTop_toBottomOf="@+id/weapon" />
+
+			<TextView
+				android:id="@+id/char_description"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="15dp"
+				android:layout_marginTop="45dp"
+				android:layout_marginEnd="15dp"
+				android:justificationMode="none"
+				android:text="Сяо (По-китайски: 魈 Xiāo, «Демон») — играбельный анемо-персонаж в Genshin Impact.  Адепт Якса, оберегающий Ли Юэ. Также его называют Завоевателем демонов или Защитником Якса."
+				android:textColor="@color/text_main"
+				android:textSize="20sp"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+			<TextView
+				android:id="@+id/textView27"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="15dp"
+				android:layout_marginTop="30dp"
+				android:text="Сильные стороны"
+				android:textColor="@color/text_main"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/char_description" />
+
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/recViewStrongPoints"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="15dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginEnd="15dp"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+			<TextView
+				android:id="@+id/textView28"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="15dp"
+				android:layout_marginTop="30dp"
+				android:text="Слабые стороны"
+				android:textColor="@color/text_main"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/recViewStrongPoints" />
+
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/recViewWeakPoints"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="15dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginEnd="15dp"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+			<TextView
+				android:id="@+id/textView29"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="15dp"
+				android:layout_marginTop="30dp"
+				android:text="Подходящие артефакты"
+				android:textColor="@color/text_main"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/recViewWeakPoints" />
+
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/recViewCharacterSets"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="2dp"
+				android:layout_marginEnd="2dp"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView29" />
+		</androidx.constraintlayout.widget.ConstraintLayout>
+	</ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

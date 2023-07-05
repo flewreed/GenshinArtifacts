@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".userCharactersPage.MyCharacterActivity">
+
+	<ScrollView
+		android:id="@+id/scrollView2"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginBottom="40dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.0">
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<ImageView
+				android:id="@+id/character_full_image"
+				android:layout_width="411dp"
+				android:layout_height="360dp"
+				android:scaleType="fitCenter"
+				android:src="@drawable/ex_xiao"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<TextView
+				android:id="@+id/char_name"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="30dp"
+				android:layout_marginTop="12dp"
+				android:layout_marginEnd="30dp"
+				android:text="Сяо"
+				android:textAlignment="center"
+				android:textColor="@color/text_main"
+				android:textSize="30sp"
+				android:textStyle="bold"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/character_full_image" />
+
+			<TextView
+				android:id="@+id/textView6"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="50dp"
+				android:layout_marginTop="14dp"
+				android:text="Уровень:"
+				android:textColor="@color/text_main"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/char_name" />
+
+			<TextView
+				android:id="@+id/textView7"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="50dp"
+				android:layout_marginTop="10dp"
+				android:text="Созвездия:"
+				android:textColor="@color/text_main"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+			<TextView
+				android:id="@+id/textView20"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="50dp"
+				android:layout_marginTop="10dp"
+				android:text="Оружие:"
+				android:textColor="@color/text_main"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+			<TextView
+				android:id="@+id/character_level"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="14dp"
+				android:layout_marginEnd="50dp"
+				android:text="90"
+				android:textColor="@color/text_main"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/char_name" />
+
+			<TextView
+				android:id="@+id/constellations"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:layout_marginEnd="50dp"
+				android:text="0"
+				android:textColor="@color/text_main"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+			<TextView
+				android:id="@+id/weapon_name"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="20dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginEnd="50dp"
+				android:text="Нефритовый коршун"
+				android:textAlignment="textEnd"
+				android:textColor="@color/text_main"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toEndOf="@+id/textView20"
+				app:layout_constraintTop_toBottomOf="@+id/constellations" />
+
+			<TextView
+				android:id="@+id/textView27"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="15dp"
+				android:layout_marginTop="20dp"
+				android:text="Артефакты:"
+				android:textColor="@color/text_main"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/weapon_name" />
+
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/rvMyArtifacts"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="15dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginEnd="15dp"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+			<TextView
+				android:id="@+id/textView28"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="15dp"
+				android:layout_marginTop="25dp"
+				android:text="Активные бонусы:"
+				android:textColor="@color/text_main"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/rvMyArtifacts" />
+
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/recViewActiveBonuses"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="15dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginEnd="15dp"
+				android:layout_marginBottom="15dp"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+	</ScrollView>
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:id="@+id/start_anal"
+		android:layout_width="0dp"
+		android:layout_height="40dp"
+		android:background="@drawable/shape_start_analysis"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent">
+
+		<TextView
+			android:id="@+id/textView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Начать анализ"
+			android:textColor="@color/text_main"
+			android:textSize="18sp"
+			android:textStyle="bold"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

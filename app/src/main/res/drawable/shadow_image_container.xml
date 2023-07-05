@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- Drop Shadow Stack -->
+	<item>
+		<shape>
+			<padding android:top="0.5dp" android:right="0dp" android:bottom="1dp" android:left="0dp" />
+<!--			<solid android:color="#10CCCCCC" />-->
+			<stroke android:color="#10CCCCCC" android:width="2dp"/>
+			<corners android:radius="10dp" />
+		</shape>
+	</item>
+	<item>
+		<shape>
+			<padding android:top="0.5dp" android:right="0dp" android:bottom="1dp" android:left="0dp" />
+<!--			<solid android:color="#10CCCCCC" />-->
+			<stroke android:color="#10CCCCCC" android:width="2dp"/>
+			<corners android:radius="10dp" />
+		</shape>
+	</item>
+	<item>
+		<shape>
+			<padding android:top="1dp" android:right="0dp" android:bottom="1dp" android:left="0dp" />
+<!--			<solid android:color="#20CCCCCC" />-->
+			<stroke android:color="#20CCCCCC" android:width="2dp"/>
+			<corners android:radius="10dp" />
+		</shape>
+	</item>
+	<item>
+		<shape>
+			<padding android:top="0dp" android:right="0dp" android:bottom="1dp" android:left="0dp" />
+<!--			<solid android:color="#30CCCCCC" />-->
+			<stroke android:color="#30CCCCCC" android:width="2dp"/>
+			<corners android:radius="10dp" />
+		</shape>
+	</item>
+	<item>
+		<shape>
+			<padding android:top="0dp" android:right="0dp" android:bottom="1dp" android:left="0dp" />
+<!--			<solid android:color="#40CCCCCC" />-->
+			<stroke android:color="#40CCCCCC" android:width="2dp"/>
+			<corners android:radius="10dp" />
+		</shape>
+	</item>
+	<item>
+		<shape>
+			<padding android:top="0dp" android:right="0dp" android:bottom="1dp" android:left="0dp" />
+<!--			<solid android:color="#50CCCCCC" />-->
+			<stroke android:color="#50CCCCCC" android:width="2dp"/>
+			<corners android:radius="10dp" />
+		</shape>
+	</item>
+	<item>
+		<shape>
+
+			<padding android:top="0dp" android:right="0dp" android:bottom="0.5dp" android:left="0dp" />
+<!--			<solid android:color="#60CCCCCC" />-->
+			<stroke android:color="#60CCCCCC" android:width="2dp"/>
+			<corners android:radius="10dp" />
+		</shape>
+	</item>
+
+	<!-- Background -->
+	<item>
+		<shape>
+<!--			<solid android:color="#ffffff" />-->
+			<corners android:radius="10dp" />
+			<solid android:color="@color/white"/>
+			<stroke android:width="1dp" android:color="@color/image_stroke"/>
+		</shape>
+	</item>
+</layer-list>

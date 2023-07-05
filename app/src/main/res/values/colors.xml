@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="gray_1">#3B4354</color>
+	<color name="pink_1">#FBE5DE</color>
+	<color name="black">#FF000000</color>
+	<color name="white">#FFFFFFFF</color>
+	<color name="transparent">#00000000</color>
+
+<!--	<color name="purple_700">#FF3700B3</color>-->
+<!--	<color name="teal_200">#FF03DAC5</color>-->
+<!--	<color name="teal_700">#FF018786</color>-->
+
+<!--	Текст	-->
+	<color name="text_main">#000000</color>
+	<color name="text_main_inactive">#626262</color>
+	<color name="text_btn">#FFFFFF</color>
+	<color name="text_edit">#DEDEDE</color>
+
+	<color name="text_edit_error">#626262</color>
+
+<!--	Виджеты		-->
+	<color name="btn">#3B4354</color>
+	<color name="edit_text">#FFFFFF</color>
+
+	<color name="image_stroke">#D0D0D0</color>
+	<color name="image_shadow">#6F000000</color>
+	<color name="image_stroke_shadow">#0F070505</color>
+
+	<color name="edit_text_stroke">#DEDEDE</color>
+	<color name="tab_panel">#FBE5DE</color>
+	<color name="line_separator">#E0DEF1</color>
+
+</resources>

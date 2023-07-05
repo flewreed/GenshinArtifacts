@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".setsInfoPage.ArtifactInfoActivity">
+
+	<ScrollView
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:scrollbars="none"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<ImageView
+				android:id="@+id/setImage"
+				android:layout_width="256dp"
+				android:layout_height="0dp"
+				android:adjustViewBounds="true"
+				android:scaleType="fitCenter"
+				android:src="@drawable/ex_artifact"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<TextView
+				android:id="@+id/setName"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="30dp"
+				android:layout_marginTop="239dp"
+				android:layout_marginEnd="30dp"
+				android:text="Церемония древней знати"
+				android:textAlignment="center"
+				android:textColor="@color/text_main"
+				android:textSize="32sp"
+				android:textStyle="bold"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<TextView
+				android:id="@+id/textView4"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="30dp"
+				android:layout_marginTop="18dp"
+				android:text="Бонус комплекта"
+				android:textColor="@color/text_main"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/setName" />
+
+			<TextView
+				android:id="@+id/bonus2_text"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="15dp"
+				android:layout_marginTop="15dp"
+				android:layout_marginEnd="15dp"
+				android:text="2 предмета: Увеличивает силу атаки на 18%."
+				android:textColor="@color/text_main"
+				android:textSize="20sp"
+				android:textStyle="normal"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+			<TextView
+				android:id="@+id/bonus4_text"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="15dp"
+				android:layout_marginTop="20dp"
+				android:layout_marginEnd="15dp"
+				android:text="4 предмета: Увеличивает урон обычной атаки на 35%, если персонаж использует одноручное, двуручное или древковое оружие."
+				android:textColor="@color/text_main"
+				android:textSize="20sp"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/bonus2_text" />
+
+			<TextView
+				android:id="@+id/textView8"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="30dp"
+				android:layout_marginTop="30dp"
+				android:text="Артефакты из набора"
+				android:textColor="@color/text_main"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/bonus4_text" />
+
+			<TextView
+				android:id="@+id/textView13"
+				android:layout_width="110dp"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:text="HP"
+				android:textAlignment="center"
+				android:textColor="@color/text_main"
+				android:textStyle="normal"
+				app:layout_constraintEnd_toStartOf="@+id/textView14"
+				app:layout_constraintStart_toEndOf="@+id/textView12"
+				app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+			<TextView
+				android:id="@+id/textView12"
+				android:layout_width="110dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="15dp"
+				android:layout_marginTop="10dp"
+				android:text="HP"
+				android:textAlignment="center"
+				android:textColor="@color/text_main"
+				android:textStyle="normal"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+			<TextView
+				android:id="@+id/textView14"
+				android:layout_width="110dp"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:layout_marginEnd="15dp"
+				android:text="HP"
+				android:textAlignment="center"
+				android:textColor="@color/text_main"
+				android:textStyle="normal"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+			<TextView
+				android:id="@+id/textView17"
+				android:layout_width="110dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="15dp"
+				android:layout_marginTop="10dp"
+				android:text="HP"
+				android:textAlignment="center"
+				android:textColor="@color/text_main"
+				android:textStyle="normal"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+
+			<TextView
+				android:id="@+id/textView18"
+				android:layout_width="110dp"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:layout_marginBottom="15dp"
+				android:text="Сила атаки"
+				android:textAlignment="center"
+				android:textColor="@color/text_main"
+				android:textStyle="normal"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/textView14"
+				app:layout_constraintStart_toEndOf="@+id/textView12"
+				app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+
+			<TextView
+				android:id="@+id/textView34"
+				android:layout_width="110dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="15dp"
+				android:text="Сила атаки"
+				android:textAlignment="center"
+				android:textColor="@color/text_main"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+			<TextView
+				android:id="@+id/textView32"
+				android:layout_width="110dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="15dp"
+				android:text="Защита"
+				android:textAlignment="center"
+				android:textColor="@color/text_main"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+			<TextView
+				android:id="@+id/textView33"
+				android:layout_width="110dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="15dp"
+				android:text="Бонус лечения"
+				android:textAlignment="center"
+				android:textColor="@color/text_main"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+			<TextView
+				android:id="@+id/textView35"
+				android:layout_width="110dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="15dp"
+				android:text="Шанс крит. попадания"
+				android:textAlignment="center"
+				android:textColor="@color/text_main"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+			<TextView
+				android:id="@+id/textView36"
+				android:layout_width="110dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="15dp"
+				android:text="Крит. урон"
+				android:textAlignment="center"
+				android:textColor="@color/text_main"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+			<TextView
+				android:id="@+id/textView37"
+				android:layout_width="110dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="15dp"
+				android:text="Мастерство стихий"
+				android:textAlignment="center"
+				android:textColor="@color/text_main"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+			<TextView
+				android:id="@+id/textView38"
+				android:layout_width="110dp"
+				android:layout_height="wrap_content"
+				android:text="Сила атаки"
+				android:textAlignment="center"
+				android:textColor="@color/text_main"
+				app:layout_constraintEnd_toStartOf="@+id/textView14"
+				app:layout_constraintStart_toEndOf="@+id/textView34"
+				app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+			<TextView
+				android:id="@+id/textView39"
+				android:layout_width="110dp"
+				android:layout_height="wrap_content"
+				android:text="Защита"
+				android:textAlignment="center"
+				android:textColor="@color/text_main"
+				app:layout_constraintEnd_toStartOf="@+id/textView14"
+				app:layout_constraintStart_toEndOf="@+id/textView32"
+				app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+			<TextView
+				android:id="@+id/textView40"
+				android:layout_width="110dp"
+				android:layout_height="wrap_content"
+				android:text="Бонус физ. урона"
+				android:textAlignment="center"
+				android:textColor="@color/text_main"
+				app:layout_constraintEnd_toStartOf="@+id/textView14"
+				app:layout_constraintStart_toEndOf="@+id/textView33"
+				app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+			<TextView
+				android:id="@+id/textView41"
+				android:layout_width="110dp"
+				android:layout_height="wrap_content"
+				android:text="Бонус стихийного урона"
+				android:textAlignment="center"
+				android:textColor="@color/text_main"
+				app:layout_constraintEnd_toStartOf="@+id/textView14"
+				app:layout_constraintStart_toEndOf="@+id/textView36"
+				app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+			<TextView
+				android:id="@+id/textView42"
+				android:layout_width="110dp"
+				android:layout_height="wrap_content"
+				android:text="Мастерство стихий"
+				android:textAlignment="center"
+				android:textColor="@color/text_main"
+				app:layout_constraintEnd_toStartOf="@+id/textView14"
+				app:layout_constraintStart_toEndOf="@+id/textView37"
+				app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+			<TextView
+				android:id="@+id/textView43"
+				android:layout_width="110dp"
+				android:layout_height="wrap_content"
+				android:layout_marginEnd="15dp"
+				android:text="Сила атаки"
+				android:textAlignment="center"
+				android:textColor="@color/text_main"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+			<TextView
+				android:id="@+id/textView44"
+				android:layout_width="110dp"
+				android:layout_height="wrap_content"
+				android:layout_marginEnd="15dp"
+				android:text="Защита"
+				android:textAlignment="center"
+				android:textColor="@color/text_main"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+			<TextView
+				android:id="@+id/textView45"
+				android:layout_width="110dp"
+				android:layout_height="wrap_content"
+				android:layout_marginEnd="15dp"
+				android:text="Восст. энергии"
+				android:textAlignment="center"
+				android:textColor="@color/text_main"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+			<TextView
+				android:id="@+id/textView46"
+				android:layout_width="110dp"
+				android:layout_height="wrap_content"
+				android:layout_marginEnd="15dp"
+				android:text="Мастерство стихий"
+				android:textAlignment="center"
+				android:textColor="@color/text_main"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+			<androidx.constraintlayout.widget.ConstraintLayout
+				android:id="@+id/constraintLayout3"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+				<TextView
+					android:id="@+id/art_name1"
+					android:layout_width="110dp"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="15dp"
+					android:layout_marginTop="10dp"
+					android:text="Королевская маска"
+					android:textAlignment="center"
+					android:textColor="@color/text_main"
+					android:textSize="13sp"
+					android:textStyle="bold"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+				<TextView
+					android:id="@+id/art_name2"
+					android:layout_width="110dp"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="10dp"
+					android:text="Королевская серебряная фляжка"
+					android:textAlignment="center"
+					android:textColor="@color/text_main"
+					android:textSize="13sp"
+					android:textStyle="bold"
+					app:layout_constraintEnd_toStartOf="@+id/art_name3"
+					app:layout_constraintStart_toEndOf="@+id/art_name1"
+					app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+				<TextView
+					android:id="@+id/art_name3"
+					android:layout_width="110dp"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="10dp"
+					android:layout_marginEnd="15dp"
+					android:text="Королевские карманные часы"
+					android:textAlignment="center"
+					android:textColor="@color/text_main"
+					android:textSize="13sp"
+					android:textStyle="bold"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+
+				<androidx.cardview.widget.CardView
+					android:id="@+id/cardView"
+					style="@style/ImageCardView"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="15dp"
+					android:layout_marginTop="24dp"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toTopOf="parent">
+
+					<androidx.constraintlayout.widget.ConstraintLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent">
+
+						<ImageView
+							android:id="@+id/artifact_set_image"
+							style="@style/ImageMain"
+							android:layout_width="110dp"
+							android:layout_height="110dp"
+							android:src="@drawable/ex_shapka"
+							app:layout_constraintBottom_toBottomOf="parent"
+							app:layout_constraintEnd_toEndOf="parent"
+							app:layout_constraintStart_toStartOf="parent"
+							app:layout_constraintTop_toTopOf="parent" />
+
+						<ImageView
+							android:id="@+id/artifact_set_image_shadow"
+							style="@style/ImageMainShadow"
+							android:layout_width="110dp"
+							android:layout_height="110dp"
+							android:src="@drawable/ex_shapka"
+							android:visibility="visible"
+							app:layout_constraintBottom_toBottomOf="parent"
+							app:layout_constraintEnd_toEndOf="parent"
+							app:layout_constraintStart_toStartOf="parent"
+							app:layout_constraintTop_toTopOf="parent" />
+
+					</androidx.constraintlayout.widget.ConstraintLayout>
+				</androidx.cardview.widget.CardView>
+
+				<androidx.cardview.widget.CardView
+					android:id="@+id/cardView2"
+					style="@style/ImageCardView"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="24dp"
+					android:foregroundGravity="center"
+					app:layout_constraintEnd_toStartOf="@+id/cardView3"
+					app:layout_constraintStart_toEndOf="@+id/cardView"
+					app:layout_constraintTop_toTopOf="parent">
+
+					<androidx.constraintlayout.widget.ConstraintLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent">
+
+						<ImageView
+							android:id="@+id/artifact_set_image2"
+							style="@style/ImageMain"
+							android:layout_width="110dp"
+							android:layout_height="110dp"
+							android:src="@drawable/ex_kubok"
+							app:layout_constraintBottom_toBottomOf="parent"
+							app:layout_constraintEnd_toEndOf="parent"
+							app:layout_constraintStart_toStartOf="parent"
+							app:layout_constraintTop_toTopOf="parent" />
+
+						<ImageView
+							android:id="@+id/artifact_set_image_shadow2"
+							style="@style/ImageMainShadow"
+							android:layout_width="110dp"
+							android:layout_height="110dp"
+							android:src="@drawable/ex_kubok"
+							android:visibility="visible"
+							app:layout_constraintBottom_toBottomOf="parent"
+							app:layout_constraintEnd_toEndOf="parent"
+							app:layout_constraintStart_toStartOf="parent"
+							app:layout_constraintTop_toTopOf="parent" />
+
+					</androidx.constraintlayout.widget.ConstraintLayout>
+				</androidx.cardview.widget.CardView>
+
+				<androidx.cardview.widget.CardView
+					android:id="@+id/cardView3"
+					style="@style/ImageCardView"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="24dp"
+					android:layout_marginEnd="15dp"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintTop_toTopOf="parent">
+
+					<androidx.constraintlayout.widget.ConstraintLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent">
+
+						<ImageView
+							android:id="@+id/artifact_set_image3"
+							style="@style/ImageMain"
+							android:layout_width="110dp"
+							android:layout_height="110dp"
+							android:src="@drawable/ex_chasyi"
+							app:layout_constraintBottom_toBottomOf="parent"
+							app:layout_constraintEnd_toEndOf="parent"
+							app:layout_constraintStart_toStartOf="parent"
+							app:layout_constraintTop_toTopOf="parent" />
+
+						<ImageView
+							android:id="@+id/artifact_set_image_shadow3"
+							style="@style/ImageMainShadow"
+							android:layout_width="110dp"
+							android:layout_height="110dp"
+							android:src="@drawable/ex_chasyi"
+							android:visibility="visible"
+							app:layout_constraintBottom_toBottomOf="parent"
+							app:layout_constraintEnd_toEndOf="parent"
+							app:layout_constraintStart_toStartOf="parent"
+							app:layout_constraintTop_toTopOf="parent" />
+
+					</androidx.constraintlayout.widget.ConstraintLayout>
+				</androidx.cardview.widget.CardView>
+
+			</androidx.constraintlayout.widget.ConstraintLayout>
+
+			<androidx.constraintlayout.widget.ConstraintLayout
+				android:id="@+id/constraintLayout4"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView42">
+
+				<TextView
+					android:id="@+id/art_name4"
+					android:layout_width="110dp"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="15dp"
+					android:layout_marginTop="10dp"
+					android:text="Королевский цветок"
+					android:textAlignment="center"
+					android:textColor="@color/text_main"
+					android:textSize="13sp"
+					android:textStyle="bold"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toBottomOf="@+id/cardView4" />
+
+				<TextView
+					android:id="@+id/art_name5"
+					android:layout_width="110dp"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="10dp"
+					android:text="Королевское перо"
+					android:textAlignment="center"
+					android:textColor="@color/text_main"
+					android:textSize="13sp"
+					android:textStyle="bold"
+					app:layout_constraintEnd_toStartOf="@+id/cardView6"
+					app:layout_constraintStart_toEndOf="@+id/cardView4"
+					app:layout_constraintTop_toBottomOf="@+id/cardView5" />
+
+				<androidx.cardview.widget.CardView
+					android:id="@+id/cardView6"
+					style="@style/ImageCardView"
+					android:layout_width="110dp"
+					android:layout_height="110dp"
+					android:layout_marginTop="10dp"
+					android:layout_marginEnd="15dp"
+					android:visibility="invisible"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintTop_toTopOf="parent"></androidx.cardview.widget.CardView>
+
+				<androidx.cardview.widget.CardView
+					android:id="@+id/cardView4"
+					style="@style/ImageCardView"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="15dp"
+					android:layout_marginTop="10dp"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toTopOf="parent">
+
+					<androidx.constraintlayout.widget.ConstraintLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent">
+
+						<ImageView
+							android:id="@+id/artifact_set_image4"
+							style="@style/ImageMain"
+							android:layout_width="110dp"
+							android:layout_height="110dp"
+							android:src="@drawable/ex_artifact"
+							app:layout_constraintBottom_toBottomOf="parent"
+							app:layout_constraintEnd_toEndOf="parent"
+							app:layout_constraintStart_toStartOf="parent"
+							app:layout_constraintTop_toTopOf="parent" />
+
+						<ImageView
+							android:id="@+id/artifact_set_image_shadow4"
+							style="@style/ImageMainShadow"
+							android:layout_width="110dp"
+							android:layout_height="110dp"
+							android:src="@drawable/ex_artifact"
+							android:visibility="visible"
+							app:layout_constraintBottom_toBottomOf="parent"
+							app:layout_constraintEnd_toEndOf="parent"
+							app:layout_constraintStart_toStartOf="parent"
+							app:layout_constraintTop_toTopOf="parent" />
+
+					</androidx.constraintlayout.widget.ConstraintLayout>
+				</androidx.cardview.widget.CardView>
+
+				<androidx.cardview.widget.CardView
+					android:id="@+id/cardView5"
+					style="@style/ImageCardView"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="10dp"
+					app:layout_constraintEnd_toStartOf="@+id/cardView6"
+					app:layout_constraintStart_toEndOf="@+id/cardView4"
+					app:layout_constraintTop_toTopOf="parent">
+
+					<androidx.constraintlayout.widget.ConstraintLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent">
+
+						<ImageView
+							android:id="@+id/artifact_set_image5"
+							style="@style/ImageMain"
+							android:layout_width="110dp"
+							android:layout_height="110dp"
+							android:src="@drawable/ex_pero"
+							app:layout_constraintBottom_toBottomOf="parent"
+							app:layout_constraintEnd_toEndOf="parent"
+							app:layout_constraintStart_toStartOf="parent"
+							app:layout_constraintTop_toTopOf="parent" />
+
+						<ImageView
+							android:id="@+id/artifact_set_image_shadow5"
+							style="@style/ImageMainShadow"
+							android:layout_width="110dp"
+							android:layout_height="110dp"
+							android:src="@drawable/ex_pero"
+							android:visibility="visible"
+							app:layout_constraintBottom_toBottomOf="parent"
+							app:layout_constraintEnd_toEndOf="parent"
+							app:layout_constraintStart_toStartOf="parent"
+							app:layout_constraintTop_toTopOf="parent" />
+
+					</androidx.constraintlayout.widget.ConstraintLayout>
+				</androidx.cardview.widget.CardView>
+			</androidx.constraintlayout.widget.ConstraintLayout>
+		</androidx.constraintlayout.widget.ConstraintLayout>
+	</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
